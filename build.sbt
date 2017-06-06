@@ -27,4 +27,4 @@ mainClass in Compile := Some("org.example.Job")
 run in Compile <<= Defaults.runTask(fullClasspath in Compile, mainClass in (Compile, run), runner in (Compile, run))
 
 // exclude Scala library from assembly
-assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
+// assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
